@@ -4,7 +4,7 @@
 ; ld -s -o * *.o
 
 section .data
-    msg db 'Hello World, Marcelão!\n' ;msg db string
+    msg db 'Hello World, Marcelão!', 0xA ;msg db string 0xA indica quebra de linha
     tam equ $- msg ;passa tamanho da string
 
 section .text

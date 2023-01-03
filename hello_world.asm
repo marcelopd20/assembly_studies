@@ -4,9 +4,9 @@
 ; ld -s -o * *.o
 
 section .data
-    msg db 'Hello World, Marcelão!', 0xA ;msg db string 0xA indica quebra de linha
-    msgC db 'Hello World, Marcelão!', 0xA ;o tam ira reconhecer esta linha pois deve vir imediantamente após msg
-    tam equ $- msg ;passa tamanho da string
+    msg db 'Hello World, Marcelão!', 0xA ;msg(ponteiro) db string 0xA indica quebra de linha
+    tam equ $- msg ;passa tamanho da string tam é um ponteiro
+    msgC db 'Hello World, Marcelão!', 0xA 
 
 section .text
 

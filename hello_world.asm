@@ -5,12 +5,7 @@
 
 section .data
     msg db 'Hello World, Marcelão!', 0xA ;msg(ponteiro) db string 0xA indica quebra de linha
-    a1 db 'Hello World, Marcelão!', 0xA ;msg(ponteiro) db string 0xA indica quebra de linha
-    a2 db 'Hello World, Marcelão!', 0xA ;msg(ponteiro) db string 0xA indica quebra de linha
-    a3 db 'Hello World, Marcelão!', 0xA ;msg(ponteiro) db string 0xA indica quebra de linha
-    a4 db 'Hello World, Marcelão!', 0xA ;msg(ponteiro) db string 0xA indica quebra de linha
     tam equ $- msg ;passa tamanho da string tam é um ponteiro
-    msgC db 'Hello World, Marcelão!', 0xA 
 
 section .text
 

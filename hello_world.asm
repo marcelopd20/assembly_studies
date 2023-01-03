@@ -5,6 +5,7 @@
 
 section .data
     msg db 'Hello World, Marcelão!', 0xA ;msg db string 0xA indica quebra de linha
+    msgC db 'Hello World, Marcelão!', 0xA ;o tam ira reconhecer esta linha pois deve vir imediantamente após msg
     tam equ $- msg ;passa tamanho da string
 
 section .text
